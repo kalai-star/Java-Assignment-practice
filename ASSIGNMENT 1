@@ -1,0 +1,115 @@
+JAVA PROGRAM
+
+DAY 1:ASSIGNMENT
+
+1. Type Conversion Challenge
+Problem:
+
+Write a Java program that accepts an integer, a float, and a character from the user.
+
+Perform the following operations:
+	• Convert the integer to a float and add it to the float input.
+	• Convert the character to its ASCII value and add it to the integer.
+	• Display the results with proper data type usage.
+
+Soln:
+package Practice;
+import java.util.Scanner;
+public class Practice {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+float b=sc.nextFloat();
+char c=sc.next().charAt(0);
+float d=(float)a;
+int e=(int)c;
+System.out.println(d+b);
+System.out.println(a+e);
+}
+}
+
+Output:
+35
+20.5
+k
+55.5
+142
+
+
+
+
+
+2. Arithmetic Expression Evaluator
+Problem:
+
+Write a program that takes three numbers from the user: two integers and one double.
+
+Perform and display the results of the following:
+
+	Addition, Subtraction, Multiplication, and Division between the integers.
+	 Multiply the result of the addition with the double value.
+	 Ensure proper type casting is used wherever necessary.
+
+Soln:
+package Practice;
+import java.util.Scanner;
+public class Practice {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+float c=sc.nextFloat();
+System.out.println(a+b);
+System.out.println(b-a);
+System.out.println(a*b);
+System.out.println(a/b);
+System.out.println(c*(a+b));
+
+Output:
+20
+30
+9.54
+50
+10
+600
+0
+477.0
+
+3. Bitwise Operator Experiment
+Problem:
+Create a program that reads two integer numbers from the user. Perform the following
+bitwise operations and print the results:
+• AND
+• OR
+• XOR
+• Left Shift (both numbers by 2 bits)
+• Right Shift (both numbers by 2 bits)
+Soln:
+package Practice;
+import java.util.Scanner;
+public class Practice {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+System.out.println(a & b);
+System.out.println(a | b);
+System.out.println(a ^ b);
+System.out.println(a << b);
+System.out.println(a >> b);
+
+Output:
+17
+13
+1
+29
+28
+139264
+0
+
+
+
+
